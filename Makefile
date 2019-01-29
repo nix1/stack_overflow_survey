@@ -25,8 +25,8 @@ requirements:
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
 ## Make Dataset
-data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py
+data:
+	wget --no-clobber -O ./data/raw/stacksurvey.zip "https://drive.google.com/uc?export=download&id=1_9On2-nsBQIw3JiY43sWbrF8EjrqrR4U"
 
 ## Delete all compiled Python files
 clean:
