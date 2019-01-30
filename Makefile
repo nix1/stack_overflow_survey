@@ -27,6 +27,8 @@ requirements:
 ## Make Dataset
 data:
 	wget --no-clobber -O ./data/raw/stacksurvey.zip "https://drive.google.com/uc?export=download&id=1_9On2-nsBQIw3JiY43sWbrF8EjrqrR4U"
+	unzip ./data/raw/stacksurvey.zip -d ./data/raw
+	rm ./data/raw/stacksurvey.zip
 
 ## Delete all compiled Python files
 clean:
